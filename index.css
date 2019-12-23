@@ -7,6 +7,7 @@
 body{
 	
 	background-image: url("https://media.gettyimages.com/photos/white-laptop-keyboard-picture-id157565469?s=2048x2048");
+	background-size: 100% 180vh;
 }
 .content{
 	position: absolute;
@@ -27,6 +28,7 @@ h1{
 	font-size: 1.5rem;
 	width: inherit;
 	max-height: 350px;
+	box-shadow: -0.5px -0.5px 2px 3px black,0.5px 0.5px 1px 3px black;
 }
 .btn{
 	width: inherit;
