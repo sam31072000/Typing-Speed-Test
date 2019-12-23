@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 
+	border-box;
+}
+.mainbox{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-image: url("https://media.gettyimages.com/photos/white-laptop-keyboard-picture-id157565469?s=2048x2048");
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*to put a div in center  */
+	text-align: center; /*text in xenter*/
+}
+h1{
+	color: black;
+	text-shadow: 2px 2px 3px blue;
+	font-variant: small-caps;
+}
+#typebox{
+	padding:5px;
+	background-color: #444; 
+	color: white;
+	font-size: 1.5rem;
+}
