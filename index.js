@@ -5,11 +5,14 @@ window.onload = () => {
 		const typeWords=document.getElementById('typebox');
 		const btn=document.getElementById('btn');
 		let startTime,endTime;
+
+		var playString = 0;
 		
 		const playGame = ()=>{
 			let randomnumber=Math.floor(Math.random()*setofwords.length);
 			//console.log(randomnumber); 
-			msg.innerText = setofwords[randomnumber];
+			playString = randomnumber;
+			msg.innerText = "Type this'"+setofwords[randomnumber]+"'";
 			let date=new Date();
 			startTime=date.getTime();
 			btn.innerText="Done";
@@ -26,7 +29,7 @@ window.onload = () => {
 			let wordCount=wordCounter(totalStr);
 			let speed= Math.round((wordCount/totalTime)*60);
 			let finalMsg="You typed words at the speed of "+ speed +" words per minute in which ";
-			finalMsg+=compareWords(msg.innerText,totalStr);
+			finalMsg+=compareWords(setofwords[playString],totalStr);
 			msg.innerHTML=finalMsg;
 		}
 		
